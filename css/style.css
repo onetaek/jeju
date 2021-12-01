@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* 초기화 */
+body, h1, h2, h3, h4, h5, h6, ul, figure, p 
+{ margin:0; padding: 0 ;}
+ul li { list-style: none; }
+a { text-decoration: none; } /* 밑줄없에기 */ 
+address { font-style: normal; }
+small { font-size: 1em; }
+.hidden { position: absolute; left: -9999px; }
+/* 왼쪽이나 위로 보내줘야 스크롤이 안생김 */
+body { font-family: 'Noto Sans KR', sans-serif; }
+/* 헤더 */
+#header { height: 500px; text-align: center; color: #fff;
+    background:url(../images/jaeju.jpg) no-repeat center bottom / cover;}
+#header hgroup { padding-top: 120px; }
+#gnb{ overflow: hidden; width: 1200px; position: absolute; top:470px; 
+    left: 50%; left: calc(50% - 600px); }
+#gnb ul li { width: 25%; float:left; }
+#gnb ul li a { display: block; height: 60px;/* 부모가 li이므로! */
+    background: rgb(25, 0, 255); color: #fff; line-height: 60px; text-align: center;} 
+#gnb ul li a:hover { background: #bbf78c; color: #000; }
+    /* 본문 */
+#content { width: 1200px; margin: 50px auto 50px; }
+#content article h3 { margin: 20px 0; }
+#content article figure { margin-bottom: 20px; }
+/* footer */
+#footer { padding: 50px 0; background-color:aquamarine; color: #fff; 
+    text-align: center; }
+#footer p { margin: 20px 0; }
